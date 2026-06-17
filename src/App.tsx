@@ -43,8 +43,8 @@ function App() {
         </p>
       </header>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-4">
-        <div className="space-y-4">
+      <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_320px] gap-4">
+        <div className="space-y-4 min-w-0">
           <div className="flex items-center justify-between">
             <span className="text-sm text-slate-400">
               Solver{running && <span className="text-slate-500"> (reset to switch)</span>}:
